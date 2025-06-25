@@ -1,6 +1,6 @@
-package org.example.accessModifiers.auth;
+package org.example.accessmodifiers.auth;
 
-import org.example.accessModifiers.security.User;
+import org.example.accessmodifiers.security.User;
 
 public class AuthService {
     public static void main(String[] args) {

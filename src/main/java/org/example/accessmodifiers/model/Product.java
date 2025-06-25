@@ -1,4 +1,4 @@
-package org.example.accessModifiers.model;
+package org.example.accessmodifiers.model;
 
 public class Product {
     public String name;

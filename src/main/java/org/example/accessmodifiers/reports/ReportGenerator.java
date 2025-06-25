@@ -1,4 +1,4 @@
-package org.example.accessModifiers.reports;
+package org.example.accessmodifiers.reports;
 
 // import org.example.accessModifiers.data.Customer; // ОШИБКА: Customer имеет default доступ и не может быть импортирован
 

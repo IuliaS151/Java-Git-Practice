@@ -1,7 +1,6 @@
-package org.example.accessModifiers.anotherapp;
+package org.example.accessmodifiers.anotherapp;
 
-import org.example.accessModifiers.extended.Car;
-import org.example.accessModifiers.core.Vehicle;
+import org.example.accessmodifiers.extended.Car;
 
 public class App {
     public static void main(String[] args) {

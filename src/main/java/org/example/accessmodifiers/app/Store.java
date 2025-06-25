@@ -1,5 +1,5 @@
-package org.example.accessModifiers.app;
-import org.example.accessModifiers.model.Product;
+package org.example.accessmodifiers.app;
+import org.example.accessmodifiers.model.Product;
 
 public class Store {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.accessModifiers.core;
+package org.example.accessmodifiers.core;
 
 public class Vehicle {
     protected String type;

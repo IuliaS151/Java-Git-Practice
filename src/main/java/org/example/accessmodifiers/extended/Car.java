@@ -1,6 +1,6 @@
-package org.example.accessModifiers.extended;
+package org.example.accessmodifiers.extended;
 
-import org.example.accessModifiers.core.Vehicle;
+import org.example.accessmodifiers.core.Vehicle;
 
 public class Car extends Vehicle {
     public Car() {

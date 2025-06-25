@@ -1,4 +1,4 @@
-package org.example.accessModifiers.security;
+package org.example.accessmodifiers.security;
 
 
 public class User {

@@ -1,4 +1,4 @@
-package org.example.accessModifiers.data;
+package org.example.accessmodifiers.data;
 
 class Customer { // default
     String customerId;
