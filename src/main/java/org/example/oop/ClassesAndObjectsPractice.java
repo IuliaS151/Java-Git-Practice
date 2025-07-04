@@ -1,14 +1,4 @@
-package org.example;
-
-import com.sun.org.apache.xalan.internal.xsltc.dom.SimpleResultTreeImpl;
-
-import java.nio.CharBuffer;
-import java.util.StringJoiner;
-import java.util.StringTokenizer;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static org.example.TextProcessor.containsDigit;
+package org.example.oop;
 
 class Car {
     // Поля - определяют состояние объекта
