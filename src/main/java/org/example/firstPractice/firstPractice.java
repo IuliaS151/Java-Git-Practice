@@ -1,4 +1,4 @@
-package org.example;
+package org.example.firstPractice;
 
 public class firstPractice {
     public static void main(String[] args) {

@@ -7,6 +7,12 @@ class AccountServiceImpl implements AccountService{
     public AccountServiceImpl(Account[] accounts){
         this.accounts = accounts;
     }
+  
+    public AccountServiceImpl(Account[] accounts){
+        this.accounts = accounts;
+    }
+  
+    @Override
     public Account findAccountByOwnerId(long id) {
         for (Account account : accounts) {
             if(account.getOwner() != null && account.getId() == id) {
@@ -16,6 +22,7 @@ class AccountServiceImpl implements AccountService{
         return null;
     }
 
+    @Override
     public long countAccountsWithBalanceGreaterThan(long balance) {
         long count = 0;
         for(Account account : accounts) {
