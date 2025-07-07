@@ -1,4 +1,4 @@
-package org.example.arrayListExamples;
+package org.example.ListExamples;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
