@@ -78,8 +78,8 @@ public class YellowSub {
        for (int i = 0; i < uniqueCount; i++) {
            System.out.println("Word: '" + uniqueWords[i] + "', Count: " + counts[i]);
        }
+
+
     }
-
-
 }
 

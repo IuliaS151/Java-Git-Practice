@@ -40,4 +40,12 @@ class Text {
         }
         return reversedSentence.toString();
     }
+
+    public String toReverse4(String sentence) {
+        String reversedSentence = "";
+        for (int i = sentence.length() - 1; i >= 0; i--){
+            reversedSentence += sentence.charAt(i);
+        }
+        return reversedSentence;
+    }
 }

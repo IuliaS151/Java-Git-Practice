@@ -7,5 +7,6 @@ public class reversing {
         System.out.println(myString.toReverse(anySentence));
         System.out.println(myString.toReverse2(anySentence));
         System.out.println(myString.toReverse3(anySentence));
+        System.out.println(myString.toReverse4(anySentence));
     }
 }
