@@ -8,6 +8,7 @@ public class ArrayListExample {
         // Создание ArrayList
         List<String> fruits = new ArrayList<>();
 
+
         // Добавление элементов
         fruits.add("Apple");
         fruits.add("Banana");
