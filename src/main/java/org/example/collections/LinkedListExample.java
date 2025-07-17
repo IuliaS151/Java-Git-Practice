@@ -1,6 +1,8 @@
 package org.example.collections;
 
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListExample {
     public static void main(String[] args){
