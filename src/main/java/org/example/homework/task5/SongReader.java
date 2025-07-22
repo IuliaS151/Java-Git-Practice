@@ -1,6 +1,5 @@
 package org.example.homework.task5;
 
-import javax.imageio.IIOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -14,6 +13,7 @@ public class SongReader {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
+                songBuilder.append(line).append("\n");
                 System.out.println(line);
             }
         } catch (IOException e ){
@@ -21,15 +21,5 @@ public class SongReader {
             e.printStackTrace();
         }
         return songBuilder.toString();
-    }
-
-    public  static boolean isFoundLine (String line, String text) {
-
-        boolean isFound = false;
-
-        if (text.contains(line)){
-            isFound = true;
-        }
-        return isFound;
     }
 }

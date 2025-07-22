@@ -7,10 +7,9 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 import static org.example.homework.task5.SongReader.readSongFromFile;
-import static org.example.homework.task5.SongReader.isFoundLine;
 
 public class YellowSub {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BeatlesException {
        // 2. Save this song as String
        String songText = "In the town where I was born\n" +
                "Lived a man who sailed to sea\n" +
@@ -81,7 +80,7 @@ public class YellowSub {
                     uniqueCount++;
            }
        }
-       // 5. Print to consol word and how many times it appeared in the array
+       // 5. Print to console word and how many times it appeared in the array
        for (int i = 0; i < uniqueCount; i++) {
            System.out.println("Word: '" + uniqueWords[i] + "', Count: " + counts[i]);
         }
@@ -116,28 +115,21 @@ public class YellowSub {
        // Part 4
        // 1. Save song ""beatles yellow submarine"" to txt file
 
-       /*try {
-           Scanner ysTextFromFile = new Scanner("Yellow-Sub.txt");
-       } catch (FileNotFoundException e) {
-           System.err.println("");
-       }*/
         // 2. Read song from file (serialization, use a try with resources)
         System.out.println("Reading text from file: \n ");
-        String songContent = readSongFromFile("Yellow-Sub.txt");
-        System.out.println(songContent);
+        String songContent = readSongFromFile("src/Yellow-Sub.txt");
 
-        String line = "So we sailed on to the sun,";
-
-        try {
-            Scanner ysTextFromFile = new Scanner(new File("Yellow-Sub.txt"));
-            boolean isFound = isFoundLine(line, ysTextFromFile.toString());
-            if (isFound) {
-                throw new BeatlesException("The line: '" + line + "' is found");
-            }
-        } catch (BeatlesException | FileNotFoundException e){
-            System.out.println(e);
-        }
+        // 5. Throw BeatlesException defined above if a given random string is not found in your song text.
+        String line = "Show must go on!";
+        isFoundLine(line,songContent);
     }
 
+    // 4. Create a method which verifies if some random string (ex: ""Show must go on!"") can be found in song above
+    private static void isFoundLine(String line, String originalString) throws BeatlesException{
+        boolean contains = originalString.contains(line);
+        if (!contains) {
+            throw new BeatlesException();
+        }
+    }
 }
 
