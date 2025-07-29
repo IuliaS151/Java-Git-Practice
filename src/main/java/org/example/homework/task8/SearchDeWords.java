@@ -13,6 +13,8 @@ public class SearchDeWords {
         String deRegExp = "(?i)\\bde[a-z]*\\b";
 
         //add uppeercases variants - (?i)
+        String deRegExp = "\\bde[a-z]*\\b";
+
         Pattern pattern = Pattern.compile(deRegExp);
         Matcher matcher = pattern.matcher(testForSearch);
         System.out.println();
